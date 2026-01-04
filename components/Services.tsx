@@ -15,13 +15,15 @@ interface ProjectData {
   technologies: string[];
 }
 
+const getAssetPath = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`;
+
 const projectsData: ProjectData[] = [
   {
     id: '01',
     title: 'UBB Plan',
     year: '2024',
-    image: '/ubb_mockup.png',
-    images: ['/ubb1.png', '/ubb2.png', '/ubb3.png'],
+    image: getAssetPath('/ubb_mockup.png'),
+    images: [getAssetPath('/ubb1.png'), getAssetPath('/ubb2.png'), getAssetPath('/ubb3.png')],
     displayMode: 'image',
     github: 'https://github.com/matikgal/ubb-schedule',
     technologies: ['React', 'TypeScript', 'Capacitor', 'Supabase', 'Tailwind CSS', 'Framer Motion'],
@@ -30,8 +32,8 @@ const projectsData: ProjectData[] = [
     id: '02',
     title: 'Kariera Rekord',
     year: '2024',
-    image: '/kariera_rekord.png',
-    images: ['/kariera_rekord_full.png', '/kariera_rekord_full_2.png', '/kariera_rekord_full_3.png'],
+    image: getAssetPath('/kariera_rekord.png'),
+    images: [getAssetPath('/kariera_rekord_full.png'), getAssetPath('/kariera_rekord_full_2.png'), getAssetPath('/kariera_rekord_full_3.png')],
     displayMode: 'scrolling-image',
     github: 'https://github.com/matikgal/carrer-rekord',
     liveUrl: 'https://matikgal.github.io/carrer-rekord/',
@@ -41,7 +43,7 @@ const projectsData: ProjectData[] = [
     id: '03',
     title: 'Archiwum',
     year: '2024',
-    image: '/archiwum.png',
+    image: getAssetPath('/archiwum.png'),
     images: [],
     github: 'https://github.com/GaloszJakub/Archiwum',
     liveUrl: 'https://archiwum.netlify.app/',
@@ -51,8 +53,8 @@ const projectsData: ProjectData[] = [
     id: '04',
     title: 'UBB Evaluation',
     year: '2024',
-    image: '/ubb_ocena1.png',
-    images: ['/ubb_ocena1.png', '/ubb_ocena2.png', '/ubb_ocena3.png', '/ubb_ocena4.png'],
+    image: getAssetPath('/ubb_ocena1.png'),
+    images: [getAssetPath('/ubb_ocena1.png'), getAssetPath('/ubb_ocena2.png'), getAssetPath('/ubb_ocena3.png'), getAssetPath('/ubb_ocena4.png')],
     displayMode: 'carousel',
     github: 'https://github.com/matikgal/UBB-ocena-pracownika',
     technologies: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Keycloak', 'Firebase', 'Radix UI'],
@@ -61,7 +63,7 @@ const projectsData: ProjectData[] = [
     id: '05',
     title: 'Sielska Ostoja',
     year: '2024',
-    image: '/sielska_ostoja.png',
+    image: getAssetPath('/sielska_ostoja.png'),
     images: [],
     displayMode: 'image',
     liveUrl: 'https://sielskaostoja.netlify.app/',
