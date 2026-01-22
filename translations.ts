@@ -12,7 +12,7 @@ export const translations = {
         hero: {
             available: 'Available for hire',
             greeting: "Hi, I'm",
-            description: 'A Creative Developer and UI/UX Engineer based in the digital realm. I craft accessible, pixel-perfect, and performant web experiences.',
+            description: 'A Frontend Developer & QA Tester based in the digital realm. I craft accessible, pixel-perfect, and performant web experiences.',
             seeWork: 'See My Work',
             contact: 'Contact Me',
         },
@@ -121,7 +121,7 @@ export const translations = {
         hero: {
             available: 'Dostępny do współpracy',
             greeting: 'Cześć, jestem',
-            description: 'Kreatywny Developer i UI/UX Engineer. Tworzę dostępne, perfekcyjne pikselowo i wydajne strony internetowe.',
+            description: 'Frontend Developer i Tester QA. Tworzę dostępne, perfekcyjne pikselowo i wydajne strony internetowe.',
             seeWork: 'Zobacz projekty',
             contact: 'Kontakt',
         },
