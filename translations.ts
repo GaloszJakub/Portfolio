@@ -85,8 +85,9 @@ export const translations = {
             education: 'Education',
             work: 'Work',
             educationItems: [
-                { id: '1', title: 'Computer Science', company: 'University', year: 'Present', description: 'Currently studying Computer Science, diving deep into software engineering and algorithms.' },
-                { id: '2', title: 'IT Technician', company: 'Technical High School', year: 'Completed', description: 'Graduated from Technical High School. Gained solid foundations in OS, networks, and programming.' },
+                { id: '1', title: "Master's in Computer Science", company: 'University', year: 'Present', description: 'Currently pursuing a Master\'s degree in Computer Science, building on engineering foundations.' },
+                { id: '2', title: "Bachelor's in Computer Science (Engineer)", company: 'University', year: 'Completed', description: 'Graduated with an Engineer\'s degree in Computer Science, specializing in software engineering.' },
+                { id: '3', title: 'IT Technician', company: 'Technical High School', year: 'Completed', description: 'Graduated from Technical High School. Gained solid foundations in OS, networks, and programming.' },
             ],
             workItems: [
                 { id: '3', title: 'Software Developer Intern', company: 'Rekord SI', year: 'Internship', description: 'Professional internship at Rekord SI in Bielsko-Biała. Worked within a dev team, learning the software development lifecycle.' },
@@ -195,8 +196,9 @@ export const translations = {
             work: 'Praca',
             present: 'Obecnie',
             educationItems: [
-                { id: '1', title: 'Informatyka', company: 'Uniwersytet', year: 'Obecnie', description: 'Aktualnie studiuję informatykę, na specjalizacji inżynierii oprogramowania. ' },
-                { id: '2', title: 'Technik Informatyk', company: 'Technikum', year: 'Ukończone', description: '' },
+                { id: '1', title: 'Informatyka - studia magisterskie', company: 'Uniwersytet', year: 'Obecnie', description: 'Aktualnie studiuję na studiach magisterskich z informatyki.' },
+                { id: '2', title: 'Informatyka - inżynier', company: 'Uniwersytet', year: 'Ukończone', description: 'Ukończone studia inżynierskie z informatyki, specjalizacja inżynieria oprogramowania.' },
+                { id: '3', title: 'Technik Informatyk', company: 'Technikum', year: 'Ukończone', description: '' },
             ],
             workItems: [
                 { id: '3', title: 'Praktykant Programista', company: 'Rekord SI', year: 'Praktyki', description: 'Praktyki zawodowe w firmie Rekord SI w Bielsku-Białej. Praca w zespole programistycznym, poznanie cyklu wytwarzania oprogramowania.' },
