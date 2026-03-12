@@ -57,8 +57,8 @@ export const Hero: React.FC = () => {
           </div>
 
           <div className="flex gap-8 mt-16 text-white/40">
-            <a href="#" aria-label="GitHub Profile" className="hover:text-rose transition-colors"><Github className="w-8 h-8" /></a>
-            <a href="#" aria-label="LinkedIn Profile" className="hover:text-rose transition-colors"><Linkedin className="w-8 h-8" /></a>
+            <a href="https://github.com/GaloszJakub" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" className="hover:text-rose transition-colors"><Github className="w-8 h-8" /></a>
+            <a href="https://www.linkedin.com/in/kuba-ga%C5%82osz/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" className="hover:text-rose transition-colors"><Linkedin className="w-8 h-8" /></a>
           </div>
 
           <motion.div

@@ -121,14 +121,19 @@ const Footer = () => {
       </div>
 
       <div className="flex gap-8">
-        {['LinkedIn', 'GitHub'].map(social => (
+        {[
+          { name: 'LinkedIn', url: 'https://www.linkedin.com/in/kuba-ga%C5%82osz/' },
+          { name: 'GitHub', url: 'https://github.com/GaloszJakub' },
+        ].map(social => (
           <a
-            key={social}
-            href="#"
-            aria-label={`${social} Profile`}
+            key={social.name}
+            href={social.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`${social.name} Profile`}
             className="text-sm font-mono hover:text-rose transition-colors uppercase tracking-wider"
           >
-            {social}
+            {social.name}
           </a>
         ))}
       </div>

@@ -12,7 +12,7 @@ export const translations = {
         hero: {
             available: 'Available for hire',
             greeting: "Hi, I'm",
-            description: 'A Frontend Developer & QA Tester based in the digital realm. I craft accessible, pixel-perfect, and performant web experiences.',
+            description: 'A Fullstack Developer & QA Tester based in the digital realm. I craft accessible, pixel-perfect, and performant web experiences.',
             seeWork: 'See My Work',
             contact: 'Contact Me',
         },
@@ -34,7 +34,7 @@ export const translations = {
         tech: {
             section: '02 / The Arsenal',
             title: 'Tech Stack',
-            frontend: 'Frontend',
+            frontend: 'Fullstack',
             backend: 'Backend & Services',
             tools: 'Tools & Workflow',
             testing: 'Testing',
@@ -122,7 +122,7 @@ export const translations = {
         hero: {
             available: 'Dostępny do współpracy',
             greeting: 'Cześć, jestem',
-            description: 'Frontend Developer i Tester QA. Tworzę dostępne, perfekcyjne pikselowo i wydajne strony internetowe.',
+            description: 'Fullstack Developer i Tester QA. Tworzę dostępne, perfekcyjne pikselowo i wydajne strony internetowe.',
             seeWork: 'Zobacz projekty',
             contact: 'Kontakt',
         },
@@ -144,7 +144,7 @@ export const translations = {
         tech: {
             section: '02 / Arsenał',
             title: 'Technologie',
-            frontend: 'Frontend',
+            frontend: 'Fullstack',
             backend: 'Backend i usługi',
             tools: 'Narzędzia',
             testing: 'Testowanie',
