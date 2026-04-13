@@ -37,11 +37,11 @@ export const Navigation: React.FC = () => {
           <button
             key={item.id}
             onClick={() => scrollTo(item.id)}
-            className="group relative p-2 hover:text-rose transition-colors"
+            className="group relative flex flex-col items-center gap-1 px-2 py-1 hover:text-rose transition-colors"
             aria-label={item.label}
           >
             <item.icon className="w-5 h-5" />
-            <span className="absolute -top-10 left-1/2 -translate-x-1/2 bg-white text-obsidian text-xs font-bold px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+            <span className="text-[10px] font-mono text-white/50 group-hover:text-rose transition-colors leading-none">
               {item.label}
             </span>
           </button>
@@ -49,12 +49,12 @@ export const Navigation: React.FC = () => {
         <div className="w-px h-6 bg-white/20 mx-2" />
         <button
           onClick={toggleLanguage}
-          className="group relative p-2 hover:text-rose transition-colors font-mono text-sm font-bold"
+          className="group flex flex-col items-center gap-1 px-2 py-1 hover:text-rose transition-colors"
           aria-label="Toggle language"
         >
-          {language.toUpperCase()}
-          <span className="absolute -top-10 left-1/2 -translate-x-1/2 bg-white text-obsidian text-xs font-bold px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
-            {language === 'pl' ? 'English' : 'Polski'}
+          <span className="font-mono text-sm font-bold leading-none">{language.toUpperCase()}</span>
+          <span className="text-[10px] font-mono text-white/50 group-hover:text-rose transition-colors leading-none">
+            {language === 'pl' ? 'EN' : 'PL'}
           </span>
         </button>
       </motion.div>

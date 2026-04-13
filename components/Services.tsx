@@ -196,8 +196,20 @@ export const Services: React.FC = () => {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const { language, t } = useLanguage();
 
+  const PREVIEW_W = 580;
+  const PREVIEW_H = 420;
+  const OFFSET = 20;
+
   const handleMouseMove = (e: React.MouseEvent) => {
     setMousePos({ x: e.clientX, y: e.clientY });
+  };
+
+  const getClampedPos = () => {
+    const x = mousePos.x + OFFSET + PREVIEW_W > window.innerWidth
+      ? mousePos.x - PREVIEW_W - OFFSET
+      : mousePos.x + OFFSET;
+    const y = Math.max(OFFSET, Math.min(mousePos.y - PREVIEW_H / 2, window.innerHeight - PREVIEW_H - OFFSET));
+    return { x, y };
   };
 
   const toggleExpand = (id: string) => {
@@ -259,7 +271,7 @@ export const Services: React.FC = () => {
                   </div>
                 </div>
                 <div className="flex items-center gap-4 mt-4 md:mt-0">
-                  <p className="max-w-sm text-white/50 font-light opacity-0 group-hover:opacity-100 transition-opacity duration-300 hidden md:block">
+                  <p className="max-w-sm text-white/50 font-light md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 text-sm mt-2 md:mt-0 md:text-base">
                     {projectText.description}
                   </p>
                   <motion.div
@@ -371,22 +383,22 @@ export const Services: React.FC = () => {
       <AnimatePresence>
         {hoveredProject && !expandedProject && (
           <motion.div
-            layout
-            initial={{ opacity: 0, scale: 0.8 }}
+            initial={{ opacity: 0, scale: 0.9 }}
             animate={{
               opacity: 1,
               scale: 1,
-              x: mousePos.x + 20,
-              y: mousePos.y - 150
+              x: getClampedPos().x,
+              y: getClampedPos().y,
             }}
-            exit={{ opacity: 0, scale: 0.8 }}
-            transition={{ type: "spring", stiffness: 150, damping: 15 }}
+            exit={{ opacity: 0, scale: 0.9 }}
+            transition={{ type: "tween", duration: 0.08, ease: "linear" }}
             className="pointer-events-none fixed top-0 left-0 z-20 rounded-2xl overflow-hidden border border-white/20 shadow-2xl hidden md:block bg-black"
+            style={{ width: PREVIEW_W, height: PREVIEW_H }}
           >
             <img
               src={hoveredProject.image}
               alt={hoveredProject.title}
-              className="max-w-[640px] max-h-[480px] w-auto h-auto object-contain"
+              className="w-full h-full object-cover"
             />
           </motion.div>
         )}

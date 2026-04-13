@@ -42,7 +42,7 @@ export const Hero: React.FC = () => {
           <div className="flex flex-wrap justify-center gap-4">
             <button
               onClick={scrollToServices}
-              className="px-8 bg-white text-black rounded-full font-bold hover:bg-rose hover:text-white transition-all duration-300 flex items-center gap-2"
+              className="px-8 py-4 bg-white text-black rounded-full font-bold hover:bg-rose hover:text-white transition-all duration-300 flex items-center gap-2"
             >
               {t.hero.seeWork}
               <ArrowDown className="w-4 h-4" />
