@@ -18,7 +18,6 @@ export const About: React.FC = () => {
             <dt>{m.loc}</dt><dd>{m.locVal}</dd>
             <dt>{m.lang}</dt><dd>{m.langVal}</dd>
             <dt>{m.edu}</dt><dd>{m.eduVal}</dd>
-            <dt>{m.focus}</dt><dd>{m.focusVal}</dd>
           </dl>
         </div>
         <div className="about-body reveal">

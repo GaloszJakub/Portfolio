@@ -45,11 +45,9 @@ export const translations = {
         langVal: 'PL · EN',
         edu: 'Education',
         eduVal: 'MSc CS, UBB',
-        focus: 'Focus',
-        focusVal: 'WebGPU · Motion',
       },
       lead: 'I build full-stack web applications, then test them like I don\'t trust the developer.',
-      leadEm: '(I\'m the developer.)',
+      leadEm: '',
       p1: 'A Junior Developer and student at the beginning of my professional journey. While my commercial experience is still growing, I make up for it with a huge passion for coding and a drive for continuous improvement.',
       p2: 'I give 100% in every project, focusing on modern technologies and aesthetic design. I believe in shipping fast, iterating often, and never compromising on accessibility.',
     },
@@ -146,9 +144,9 @@ export const translations = {
           num: '03',
           items: [
             { name: 'Playwright', yrs: '1y' },
+            { name: 'Selenium', yrs: '1y' },
             { name: 'Jest', yrs: '1y' },
             { name: 'Postman', yrs: '2y' },
-            { name: 'uTest', yrs: '1y' },
             { name: 'Manual QA', yrs: '1y' },
           ],
         },
@@ -168,8 +166,8 @@ export const translations = {
     xp: {
       label: 'Experience',
       num: '04 / 05',
-      t1: 'One year.',
-      t2: 'Growing fast.',
+      t1: 'My path.',
+      t2: '',
       items: [
         {
           yrs: '2025 — Now',
@@ -265,11 +263,9 @@ export const translations = {
         langVal: 'PL · EN',
         edu: 'Wykształcenie',
         eduVal: 'Informatyka MSc, UBB',
-        focus: 'Fokus',
-        focusVal: 'WebGPU · Animacje',
       },
       lead: 'Buduję pełnoprzebiegowe aplikacje webowe, a potem testuję je tak, jakbym nie ufał deweloperowi.',
-      leadEm: '(Deweloperem jestem ja.)',
+      leadEm: '',
       p1: 'Junior Developer i student na początku swojej zawodowej drogi. Choć moje doświadczenie komercyjne jest jeszcze niewielkie, nadrabiam to ogromną pasją do kodowania i chęcią ciągłego rozwoju.',
       p2: 'W każdym projekcie daję z siebie 100%, stawiając na nowoczesne technologie i estetyczny design. Wierzę w szybkie dostarczanie, częste iteracje i dbanie o dostępność.',
     },
@@ -366,9 +362,9 @@ export const translations = {
           num: '03',
           items: [
             { name: 'Playwright', yrs: '1r' },
+            { name: 'Selenium', yrs: '1r' },
             { name: 'Jest', yrs: '1r' },
             { name: 'Postman', yrs: '2l' },
-            { name: 'uTest', yrs: '1r' },
             { name: 'Manual QA', yrs: '1r' },
           ],
         },
@@ -388,8 +384,8 @@ export const translations = {
     xp: {
       label: 'Doświadczenie',
       num: '04 / 05',
-      t1: 'Jeden rok.',
-      t2: 'Szybki rozwój.',
+      t1: 'Moja ścieżka.',
+      t2: '',
       items: [
         {
           yrs: '2025 — Teraz',
