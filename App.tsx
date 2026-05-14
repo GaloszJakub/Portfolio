@@ -1,26 +1,40 @@
 import React from 'react';
+import { Navigation } from './components/Navigation';
 import { Hero } from './components/Hero';
 import { About } from './components/About';
 import { TechStack } from './components/TechStack';
-import { Services } from './components/Services';
+import { Projects } from './components/Projects';
+import { Experience } from './components/Experience';
 import { Contact } from './components/Contact';
-import { Navigation } from './components/Navigation';
+import { Marquee } from './components/Marquee';
+import { EasterEgg } from './components/EasterEgg';
+import { Gridlines } from './components/Gridlines';
 import { LanguageProvider } from './LanguageContext';
+import { useReveal } from './hooks/useReveal';
 
-const App: React.FC = () => {
+const AppInner: React.FC = () => {
+  useReveal();
+
   return (
-    <LanguageProvider>
-      <main className="bg-obsidian text-offwhite selection:bg-rose selection:text-white w-full overflow-x-hidden">
-        <div className="fixed inset-0 z-[100] pointer-events-none opacity-[0.03] mix-blend-overlay bg-noise" />
-        <Navigation />
-        <Hero />
-        <About />
-        <TechStack />
-        <Services />
-        <Contact />
-      </main>
-    </LanguageProvider>
+    <>
+      <Gridlines />
+      <Navigation />
+      <Hero />
+      <Marquee />
+      <About />
+      <Projects />
+      <TechStack />
+      <Experience />
+      <Contact />
+      <EasterEgg />
+    </>
   );
 };
+
+const App: React.FC = () => (
+  <LanguageProvider>
+    <AppInner />
+  </LanguageProvider>
+);
 
 export default App;
