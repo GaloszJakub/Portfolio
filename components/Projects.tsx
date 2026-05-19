@@ -33,7 +33,6 @@ export const Projects: React.FC = () => {
                 <div className="body">
                   <div className="top">
                     <span className="num">N° {proj.id} · Featured</span>
-                    <span>{proj.year}</span>
                   </div>
                   <div className="wc-name">{proj.title}</div>
                   <div className="desc">{proj.description}</div>
@@ -45,7 +44,6 @@ export const Projects: React.FC = () => {
                 <>
                   <div className="top">
                     <span className="num">N° {proj.id}</span>
-                    <span>{proj.year}</span>
                   </div>
                   <div className="wc-name">{proj.title}</div>
                   <div className="desc">{proj.description}</div>
