@@ -25,7 +25,6 @@ export const TechStack: React.FC = () => {
               {col.items.map((item) => (
                 <li key={item.name}>
                   <span className="nm">{item.name}</span>
-                  <span className="yrs">{item.yrs}</span>
                 </li>
               ))}
             </ul>

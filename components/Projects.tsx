@@ -26,6 +26,7 @@ export const Projects: React.FC = () => {
               href={url}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label={`${proj.title} — ${proj.category}, ${proj.year}`}
             >
               {projectPatterns[idx]}
               {proj.featured ? (

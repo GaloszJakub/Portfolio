@@ -8,7 +8,7 @@ export const Contact: React.FC = () => {
   const getCellHref = (cell: { k: string; v: string }) => {
     if (cell.k === 'Email') return `mailto:${cell.v}`;
     if (cell.k === 'GitHub') return `https://github.com/${cell.v}`;
-    return undefined;
+    return null;
   };
 
   const isExternal = (k: string) => k === 'GitHub';
@@ -29,19 +29,31 @@ export const Contact: React.FC = () => {
       </div>
 
       <div className="contact-grid">
-        {t.contact.cells.map((cell, idx) => (
-          <a
-            key={idx}
-            className="contact-cell"
-            href={getCellHref(cell)}
-            target={isExternal(cell.k) ? '_blank' : undefined}
-            rel={isExternal(cell.k) ? 'noopener noreferrer' : undefined}
-          >
-            <span className="k">{cell.k}</span>
-            <span className="v">{cell.v}</span>
-            <span className="arrow">↗</span>
-          </a>
-        ))}
+        {t.contact.cells.map((cell, idx) => {
+          const href = getCellHref(cell);
+          if (href) {
+            return (
+              <a
+                key={idx}
+                className="contact-cell"
+                href={href}
+                target={isExternal(cell.k) ? '_blank' : undefined}
+                rel={isExternal(cell.k) ? 'noopener noreferrer' : undefined}
+                aria-label={`${cell.k}: ${cell.v}`}
+              >
+                <span className="k" aria-hidden="true">{cell.k}</span>
+                <span className="v">{cell.v}</span>
+                <span className="arrow" aria-hidden="true">↗</span>
+              </a>
+            );
+          }
+          return (
+            <div key={idx} className="contact-cell">
+              <span className="k">{cell.k}</span>
+              <span className="v">{cell.v}</span>
+            </div>
+          );
+        })}
       </div>
 
       <footer className="site-footer">

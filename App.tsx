@@ -17,15 +17,18 @@ const AppInner: React.FC = () => {
 
   return (
     <>
+      <a href="#main-content" className="skip-link">Skip to main content</a>
       <Gridlines />
       <Navigation />
-      <Hero />
-      <Marquee />
-      <About />
-      <Projects />
-      <TechStack />
-      <Experience />
-      <Contact />
+      <main id="main-content">
+        <Hero />
+        <Marquee />
+        <About />
+        <Projects />
+        <TechStack />
+        <Experience />
+        <Contact />
+      </main>
       <EasterEgg />
     </>
   );

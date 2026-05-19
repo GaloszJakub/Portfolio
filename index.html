@@ -448,6 +448,27 @@
       transition:transform .4s cubic-bezier(.2,.7,.2,1);
     }
     .egg-overlay.show .egg-img{transform:scale(1)}
+
+    /* skip link */
+    .skip-link{
+      position:absolute; left:-9999px; top:auto;
+      width:1px; height:1px; overflow:hidden;
+    }
+    .skip-link:focus{
+      position:fixed; top:0; left:0;
+      width:auto; height:auto;
+      padding:12px 24px;
+      background:var(--accent); color:var(--bg);
+      font-family:'JetBrains Mono',monospace;
+      font-size:13px; letter-spacing:.08em; text-transform:uppercase;
+      text-decoration:none; z-index:9999; outline:none;
+    }
+
+    /* focus indicators */
+    :focus-visible{
+      outline:2px solid var(--accent);
+      outline-offset:3px;
+    }
   </style>
 </head>
 
