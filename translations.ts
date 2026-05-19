@@ -173,7 +173,7 @@ export const translations = {
           yrs: '2025 — Now',
           role: 'MSc Computer Science',
           place: 'University of Bielsko-Biała',
-          note: 'Currently pursuing a Master\'s degree in Computer Science, building on engineering foundations.',
+          note: 'Currently pursuing a Master\'s degree in Computer Science.',
           tags: [],
         },
         {
@@ -391,7 +391,7 @@ export const translations = {
           yrs: '2025 — Teraz',
           role: 'Informatyka — studia magisterskie',
           place: 'Uniwersytet Bielsko-Bialski',
-          note: 'Aktualnie studiuję na studiach magisterskich z informatyki, budując na fundamentach inżynierskich.',
+          note: 'Aktualnie studiuję na studiach magisterskich z informatyki.',
           tags: [],
         },
         {
