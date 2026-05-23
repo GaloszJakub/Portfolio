@@ -54,7 +54,7 @@ export const translations = {
     work: {
       label: 'Selected Work',
       num: '02 / 05',
-      t1: 'Five projects.',
+      t1: 'Six projects.',
       t2: 'Passion',
       t3: '& code.',
       projects: [
@@ -106,6 +106,17 @@ export const translations = {
           stack: ['React', 'TypeScript', 'Node.js', 'PostgreSQL'],
           github: 'https://github.com/matikgal/hr-sys',
           liveUrl: 'https://hrsys-50919.web.app/login',
+        },
+        {
+          id: '06',
+          title: 'Kilometrówki Poselskie',
+          category: 'Analytics Web App',
+          year: '2025',
+          featured: true,
+          description: 'Interactive analytics platform increasing the transparency of public spending by Polish MPs. Aggregates and visualizes travel expenses (including private cars and taxis) along with other office expenditures.',
+          stack: ['Next.js', 'React', 'TypeScript', 'TailwindCSS', 'Node.js'],
+          github: 'https://github.com/GaloszJakub/kilometrowki',
+          liveUrl: 'https://kilometrowki.vercel.app/',
         },
       ],
     },
@@ -272,7 +283,7 @@ export const translations = {
     work: {
       label: 'Wybrane projekty',
       num: '02 / 05',
-      t1: 'Pięć projektów.',
+      t1: 'Sześć projektów.',
       t2: 'Pasja',
       t3: 'i kod.',
       projects: [
@@ -324,6 +335,17 @@ export const translations = {
           stack: ['React', 'TypeScript', 'Node.js', 'PostgreSQL'],
           github: 'https://github.com/matikgal/hr-sys',
           liveUrl: 'https://hrsys-50919.web.app/login',
+        },
+        {
+          id: '06',
+          title: 'Kilometrówki Poselskie',
+          category: 'Aplikacja Analityczna',
+          year: '2025',
+          featured: true,
+          description: 'Interaktywna aplikacja analityczna zwiększająca transparentność wydatków publicznych posłów Sejmu X kadencji RP. Agreguje i wizualizuje wydatki na przejazdy samochodami prywatnymi, taksówkami oraz inne pozycje kosztów biur.',
+          stack: ['Next.js', 'React', 'TypeScript', 'TailwindCSS', 'Node.js'],
+          github: 'https://github.com/GaloszJakub/kilometrowki',
+          liveUrl: 'https://kilometrowki.vercel.app/',
         },
       ],
     },

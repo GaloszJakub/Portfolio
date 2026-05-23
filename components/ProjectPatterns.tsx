@@ -31,4 +31,9 @@ export const projectPatterns: React.ReactNode[] = [
     <circle cx="50" cy="60" r="30" fill={ACCENT} />
     <path d="M50,60 Q50,30 30,20 Q50,40 50,60 Q50,40 70,20 Q50,30 50,60 Z" fill={ACCENT} />
   </svg>,
+  <svg key="p6" className="pattern" viewBox="0 0 100 100">
+    <path d="M50,10 L90,50 L50,90 L10,50 Z" fill="none" stroke={ACCENT} strokeWidth="1" />
+    <path d="M50,25 L75,50 L50,75 L25,50 Z" fill="none" stroke={ACCENT} strokeWidth="1" />
+    <circle cx="50" cy="50" r="10" fill={ACCENT} />
+  </svg>,
 ];

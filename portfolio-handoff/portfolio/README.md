@@ -1,8 +1,8 @@
 # CODING AGENTS: READ THIS FIRST
 
-This is a **handoff bundle** from Claude Design (claude.ai/design).
+This is a **handoff bundle**.
 
-A user mocked up designs in HTML/CSS/JS using an AI design tool, then exported this bundle so a coding agent can implement the designs for real.
+A user mocked up designs in HTML/CSS/JS using a design tool, then exported this bundle so a coding agent can implement the designs for real.
 
 ## What you should do — IMPORTANT
 
