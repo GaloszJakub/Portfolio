@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Handoff files
+portfolio-handoff/
+portfolio-handoff.zip
